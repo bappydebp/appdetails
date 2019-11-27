@@ -3,7 +3,7 @@
     {"id":0,"file":"client
 dev tun
 proto udp
-remote vpn244260261.opengw.net 1415
+remote vpn104935906.opengw.net 11442
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -14,7 +14,6 @@ persist-key
 persist-tun
 client
 verb 3
-
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIF2DCCA8CgAwIBAgIQTKr5yttjb+Af907YWwOGnTANBgkqhkiG9w0BAQwFADCB
@@ -50,7 +49,6 @@ QOhTsiedSrnAdyGN/4fy3ryM7xfft0kL0fJuMAsaDk527RH89elWsn2/x20Kk4yl
 0MC2Hb46TpSi125sC8KKfPog88Tk5c0NqMuRkrF8hey1FGlmDoLnzc7ILaZRfyHB
 NVOFBkpdn627G190
 -----END CERTIFICATE-----
-
 <cert>
 -----BEGIN CERTIFICATE-----
 MIICxjCCAa4CAQAwDQYJKoZIhvcNAQEFBQAwKTEaMBgGA1UEAxMRVlBOR2F0ZUNs
