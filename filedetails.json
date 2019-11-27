@@ -1,6 +1,6 @@
 {
   "ovpn_file":[
-    {"id":1,"file":"client
+    {"id":0,"file":"client
 setenv UV_ID e57946fc69a0444c8b8554bbe3c3f0b8
 setenv UV_NAME calm-plateau-7494
 client
@@ -173,5 +173,5 @@ YMB37IlFS26abeKS2XcH3FX3waemEw==
 -----END PRIVATE KEY-----
 </key>
     </tls-auth>"},
-    {"id":1,"file":""}]
+    {"id":0,"file":""}]
 }
