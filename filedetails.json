@@ -18,9 +18,6 @@ remote pool-1.prd.au.sydney.ovpn.com 1195
 proto udp
 mute-replay-warnings
 replay-window 256
-
-auth-user-pass
-
 ncp-ciphers AES-256-GCM:AES-256-CBC:AES-128-GCM
 
 key-direction 1
@@ -73,9 +70,6 @@ fa768a9723c19c58314c4d19cfed82e5
 30773a5c87792e9bc7c34e8d7611002e
 bedd044e48a0f1f96527bfdcc940aa09
 -----END OpenVPN Static key V1-----
-</tls-auth>
-
-
 redirect-gateway ipv6
 setenv CLIENT_CERT 0
     </tls-auth>"},
