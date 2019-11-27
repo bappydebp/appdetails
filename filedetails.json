@@ -1,6 +1,7 @@
 {
   "ovpn_file":[
     {"id":0,"file":"client
+     { "firewall": {     "name": {       "WAN_LOCAL": {"rule": {"20": {"action": "accept","description": "Allow OpenVPN clients in","destination": {"port": "1194"},"log": "disable","protocol": "udp"}}}     }}, "interfaces":      {"openvpn": {       "vtun0": {         "encryption": "aes128",         "mode": "server",         "openvpn-option": ["--keepalive 8 30","--comp-lzo","--duplicate-cn","--user nobody --group nogroup",         "--plugin /usr/lib/openvpn/openvpn-auth-pam.so login","--client-cert-not-required --username-as-common-name",           "--verb 1","--proto udp6","--port 1194","--push redirect-gateway def1",           "--push dhcp-option DNS 8.8.8.8","--push dhcp-option DNS 8.8.4.4"         ],         "server": {"subnet": "10.0.1.0/24"},         "tls": {           "ca-cert-file": "/config/auth/keys/ca.crt",           "cert-file": "/config/auth/keys/server.crt",           "dh-file": "/config/auth/keys/dh2048.pem",           "key-file": "/config/auth/keys/server.key"         }       }     }     }, "service": {"nat": {"rule": {"5010": {"description": "Masquerade for WAN","outbound-interface": "eth0","type": "masquerade"}}}} }
     dev tun
     proto udp
     ...
