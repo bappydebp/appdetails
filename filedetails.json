@@ -1,6 +1,6 @@
 {
 "ovpn_file":[
-  {"id":2,"file":"client
+  {"id":2,"file":""
    
 dev tun
 proto udp
@@ -107,5 +107,5 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 
 
 </tls-auth>"},
-{"id":6,"file":""}]
+{"id":2,"file":""}]
 }
