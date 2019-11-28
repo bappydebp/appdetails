@@ -1,22 +1,31 @@
 {
 "ovpn_file":[
-  {"id":0,"file":"client
+  {"id":0,"file":
+   setenv UV_ID c034ea6a54634978ba72277a9efcfd22
+setenv UV_NAME summer-plains-2647
+client
 dev tun
-proto udp
-sndbuf 0
-rcvbuf 0
-remote 51.68.191.75 1194
-resolv-retry infinite
+dev-type tun
+remote de1.freeopenvpn.org 14616 udp
 nobind
-persist-key
 persist-tun
+cipher AES-128-CBC
+auth SHA1
+verb 2
+mute 3
+push-peer-info
+ping 10
+ping-restart 60
+hand-window 70
+server-poll-timeout 4
+reneg-sec 2592000
+sndbuf 393216
+rcvbuf 393216
+max-routes 1000
 remote-cert-tls server
-auth SHA512
-cipher AES-256-CBC
-setenv opt block-outside-dns
+comp-lzo no
+auth-user-pass
 key-direction 1
-verb 3
-<ca>
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIFcTCCA1mgAwIBAgIIYtz5ToJ6LH0wDQYJKoZIhvcNAQELBQAwRjEhMB8GA1UE
@@ -52,6 +61,9 @@ xwYCdQM=
 -----END CERTIFICATE-----
 </ca>
 <tls-auth>
+#
+# 2048 bit OpenVPN static key
+#
 -----BEGIN OpenVPN Static key V1-----
 e43e40115840e032091fd5e0523c8f8b
 8751d5d6821185c2dff1212a95593681
@@ -159,6 +171,5 @@ epy43JxWFrVBTssl5LlIpEHzn4Ztjo1LWB62ssmwn6K3kgfizGNG5yfQBJV5aAzf
 WzPu4od5IiXM62Q0oLawlF7OpTjX/60=
 -----END PRIVATE KEY-----
 </key>
-</tls-auth>"},
 {"id":1,"file":""}]
 }
