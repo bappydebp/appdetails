@@ -7,23 +7,6 @@ dev tun
 proto udp
 
 
-###############################################################################
-# The destination hostname / IP address, and port number of
-# the target VPN Server.
-# 
-# You have to specify as 'remote <HOSTNAME> <PORT>'. You can also
-# specify the IP address instead of the hostname.
-# 
-# Note that the auto-generated below hostname are a "auto-detected
-# IP address" of the VPN Server. You have to confirm the correctness
-# beforehand.
-# 
-# When you want to connect to the VPN Server by using TCP protocol,
-# the port number of the destination TCP port should be same as one of
-# the available TCP listeners on the VPN Server.
-# 
-# When you use UDP protocol, the port number must same as the configuration
-# setting of "OpenVPN Server Compatible Function" on the VPN Server.
 
 remote 173.230.106.32 1195
 
