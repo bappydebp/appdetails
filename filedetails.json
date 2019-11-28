@@ -9,7 +9,6 @@ remote 51.68.152.226 80
 remote pl226.vpnbook.com 80
 resolv-retry infinite
 nobind
-persist-key
 persist-tun
 comp-lzo
 verb 3
