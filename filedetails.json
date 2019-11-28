@@ -1,6 +1,6 @@
 {
 "ovpn_file":[
-  {"id":2,"file":"client
+  {"id":0,"file":"client
 dev tun
 proto udp
 remote 161.202.144.236 1194
@@ -99,5 +99,5 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 d4ec4105a39c814bd980c9c0e0b8efb4
 -----END OpenVPN Static key V1-----
 </tls-auth>"},
-{"id":2,"file":""}]
+{"id":1,"file":""}]
 }
