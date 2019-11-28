@@ -20,7 +20,6 @@ persist-key
 persist-tun
 persist-remote-ip
 verify-x509-name de1.vyprvpn.com name
-auth-user-pass
 comp-lzo
 keepalive 10 60
 verb 3
