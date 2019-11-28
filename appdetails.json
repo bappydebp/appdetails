@@ -1,7 +1,7 @@
 {
   "ads":"true",
   "update":[{
-    "version":"1.0.2",
+    "version":"1.0.1",
     "title":"Ultra Fast VPN ",
     "description":"The App is available at google play store.",
     "size":"7.5 MB"
@@ -19,8 +19,8 @@
     {"id":0, "file":0, "city":"Essen","country":"Germany :","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"},
     {"id":1, "file":0, "city":"Hamburg","country":"Germany :","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"},
     {"id":2, "file":1, "city":"Los Angeles CA","country":"United States :","image":"unitedstates","ip":"98.184.176.27","active":"true","signal":"a"},
-    {"id":3, "file":2, "city":"San Francisco CA","country":"United States","image":"unitedstates","ip":"205.185.114.16","active":"true","signal":"b"},
-    {"id":4, "file":3, "city":"Las Vegas NV","country":"United States","image":"unitedstates","ip":"205.185.117.57","active":"true","signal":"b"},
+    {"id":3, "file":2, "city":"San Francisco CA","country":"United States :","image":"unitedstates","ip":"205.185.114.16","active":"true","signal":"b"},
+    {"id":4, "file":3, "city":"Las Vegas NV","country":"United States :","image":"unitedstates","ip":"205.185.117.57","active":"true","signal":"b"},
     {"id":5, "file":2, "city":"New York NY","country":"United States","image":"unitedstates","ip":"167.99.9.115","active":"true","signal":"b"},
     {"id":6, "file":3, "city":"Boston NY","country":"United States","image":"unitedstates","ip":"198.98.57.78","active":"false","signal":"b"},
     {"id":7, "file":1, "city":"Paris","country":"France","image":"france","ip":"95.179.220.202","active":"false","signal":"b"},
