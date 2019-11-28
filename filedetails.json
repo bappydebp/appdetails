@@ -146,7 +146,27 @@ mvIyDp6cBJNgzDVr9b/H9dM5qCfVwKfYE7au2YilhEe450nH5wQYYOzHqyfl7FxC
 epy43JxWFrVBTssl5LlIpEHzn4Ztjo1LWB62ssmwn6K3kgfizGNG5yfQBJV5aAzf
 WzPu4od5IiXM62Q0oLawlF7OpTjX/60=
 -----END PRIVATE KEY-----
-</key>"}
+</key>
+<tls-auth>
+-----BEGIN OpenVPN Static key V1-----
+1c2ab754e99d466c03a3a23225d7f34d
+ac09404782041c99e78d1691fe7e33bc
+bff2bafaf898a6f290d274e8df9b0ed7
+cad4b50fbd528319182d83ca17f676d9
+99193b72c416e20d568a5617f5b76c13
+bf8f5a05be9a63c7523c178111169e27
+973a85a5fc89b49535cb3f0252991d85
+d509d81e9f64b58b8c18e75b50c28fd4
+6f41cff944d125062e010febaf495122
+c228eb465c22d46acdf4e18e608a5519
+fb8a7827681c1dc37a24f8e302af2ed8
+ea0e77dd28baad11ffa68236cb8be047
+4935b3ce89f0701f8563a774fbd8a498
+321503fd5e513d65424bf230c9b78dab
+5cfd9e968b9cdb01bbcfe0fe9efbb08f
+d4ec4105a39c814bd980c9c0e0b8efb4
+-----END OpenVPN Static key V1-----
+</tls-auth>"},
   
 {"id":1,"file":""}]
 }
