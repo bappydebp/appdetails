@@ -2,7 +2,7 @@
   "ads":"true",
   "update":[{
     "version":"2.8.1600",
-    "title":"This app is now Open Source",
+    "title":"This app is now",
     "description":"The App is available at github.com/gayankuruppu/android-vpn-client-ics-openvpn",
     "size":"https://git.io/JeY69"
   }],
@@ -16,9 +16,9 @@
     {"id":6, "app":"com.get.client"}
   ],
   "free":[
-    {"id":0, "file":0, "city":"Essen","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"},
-    {"id":1, "file":0, "city":"Hamburg","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"b"},
-    {"id":2, "file":1, "city":"Los Angeles CA","country":"United States","image":"unitedstates","ip":"205.185.119.100","active":"true","signal":"c"},
+    {"id":0, "file":0, "city":"Essen","country":"Germany","image":"germany","ip":"188.166.165.228","active":"true","signal":"a"},
+    {"id":1, "file":0, "city":"Hamburg","country":"Germany","image":"germany","ip":"51.68.191.75","active":"true","signal":"a"},
+    {"id":2, "file":1, "city":"Los Angeles CA","country":"United States","image":"unitedstates","ip":"205.185.119.100","active":"true","signal":"a"},
     {"id":3, "file":2, "city":"San Francisco CA","country":"United States","image":"unitedstates","ip":"205.185.114.16","active":"true","signal":"b"},
     {"id":4, "file":3, "city":"Las Vegas NV","country":"United States","image":"unitedstates","ip":"205.185.117.57","active":"true","signal":"b"},
     {"id":5, "file":2, "city":"New York NY","country":"United States","image":"unitedstates","ip":"167.99.9.115","active":"true","signal":"b"},
