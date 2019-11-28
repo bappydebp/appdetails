@@ -2,11 +2,10 @@
 "ovpn_file":[
   {"id":0,"file":"
 
-
 client
 dev tun
-proto tcp
-remote 196.196.203.77 443
+proto udp
+remote 31.171.152.11 1194
 resolv-retry infinite
 remote-random
 nobind
@@ -22,8 +21,6 @@ reneg-sec 0
 comp-lzo no
 
 remote-cert-tls server
-
-#mute 10000
 verb 3
 pull
 fast-io
