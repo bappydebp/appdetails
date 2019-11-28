@@ -3,7 +3,7 @@
   {"id":0,"file":"client
 dev tun
 proto udp
-...
+gw1.fra1.octanevpn.com
 d4ec4105a39c814bd980c9c0e0b8efb4
 -----END OpenVPN Static key V1-----
 </tls-auth>"},
