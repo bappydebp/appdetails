@@ -1,7 +1,7 @@
 {
   "ads":"true",
   "update":[{
-    "version":"1.0.2",
+    "version":"1.0.1",
     "title":"Ultra Fast VPN ",
     "description":"The App is available at google play store.",
     "size":"7.5 MB"
@@ -38,7 +38,7 @@
     {"id":19, "file":12, "city":"Warsaw","country":"Poland","image":"poland","ip":"51.68.191.75","active":"true","signal":"d"},
     {"id":20, "file":13, "city":"Sydney","country":"Australia","image":"australia","ip":"46.101.174.100","active":"true","signal":"d"},
     {"id":21, "file":14, "city":"Barcelona","country":"Spain","image":"spain","ip":"157.230.138.128","active":"true","signal":"d"}
-    {"id":22, "file":15, "city":"Dhaka","country":"Bangladesh: ","image":"bangladesh","ip":"103.26.246.62","active":"true","signal":"d"}
+    {"id":22, "file":15, "city":"Dhaka","country":"Bangladesh: ","image":"spain","ip":"103.26.246.62","active":"true","signal":"d"}
     
   ]
 }
