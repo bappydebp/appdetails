@@ -176,7 +176,7 @@ proto udp
 
 
 
-remote vpn148177713.opengw.net 1534
+remote UFVpn 1534
 
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
