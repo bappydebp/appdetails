@@ -3,10 +3,10 @@
   {"id":0,"file":"
    
 client
-dev tun3
-proto tcp
-remote 51.68.152.226 80
-remote pl226.vpnbook.com 80
+dev tun2
+proto udp
+remote 51.68.152.226 25000
+remote pl226.vpnbook.com 25000
 resolv-retry infinite
 nobind
 persist-key
