@@ -282,15 +282,14 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    "},
    {"id":3,"file":"
    
-dev tun
 
+dev tun
 proto udp
 
-remote vpn103430837.opengw.net 1194
+remote 18.231.120.151 1194
 
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
-
 
 cipher AES-128-CBC
 auth SHA1
@@ -412,6 +411,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
 
 
    
