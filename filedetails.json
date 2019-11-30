@@ -165,11 +165,11 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
   
  {"id":2,"file":"
 
-  client
+client
 dev tun
 proto udp
-remote in3.vpnjantit.com 443
-remote 157.245.109.242 443
+remote in3.vpnjantit.com 1194
+remote 157.245.109.242 1194
 cipher AES-128-CBC
 auth SHA1
 resolv-retry infinite
@@ -263,6 +263,11 @@ rfWGIfhpGCQp6k8KaxD/Pv/1LV2bkehVJW9qhdonfdbizSqKAkPiOV8ycLt8m7M8
 99bO5esljtoWmnYaD6tvIlApUHU25cQOOlAiYaSul2OzbVY4Jo+DLjapCGa75vK3
 RTByUQ+NLTmIHL95XGb+7eJK8hI=
 -----END PRIVATE KEY-----
+
+</key>
+
+
+
 
 </key>
   
