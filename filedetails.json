@@ -8,7 +8,6 @@ connect-retry-max 3
 connect-retry 3
 resolv-retry 15
 dev tun
-auth-user-pass
 persist-key
 persist-tun
 nobind
