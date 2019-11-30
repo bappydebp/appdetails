@@ -25,7 +25,7 @@ comp-lzo
 verb 3
 pull
 fast-io
-cipher AES-128-CBC
+cipher AES-256-CBC
 remote-random
 
 
@@ -85,7 +85,10 @@ ad7921e7beba7b175956b9261d0cd686
 -----END OpenVPN Static key V1-----
 </tls-auth>
 
-remote au.vpn.ht 53
+remote de.vpn.ht 1301
+remote de.vpn.ht 1302
+remote de.vpn.ht 1303
+remote de.vpn.ht 1304
    
    "},
    {"id":1,"file":"
