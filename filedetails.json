@@ -134,7 +134,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 
 dev tun
 proto udp
-remote vpn584921383.opengw.net 1194
+remote vpn129648839.opengw.net 1194
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
