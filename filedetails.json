@@ -141,13 +141,25 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    {"id":1,"file":"
    
 
+
 dev tun
+
 proto udp
-remote vpn129648839.opengw.net 1194
+
+remote lesmaringan.opengw.net 1194
+
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
+
 cipher AES-128-CBC
 auth SHA1
+
+
+###############################################################################
+# Other parameters necessary to connect to the VPN Server.
+# 
+# It is not recommended to modify it unless you have a particular need.
+
 resolv-retry infinite
 nobind
 persist-key
@@ -265,6 +277,8 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
+
    "},
    {"id":3,"file":"
    
