@@ -2,7 +2,7 @@
 "ovpn_file":[
   {"id":0,"file":"
 client
-proto tcp
+proto udp
 remote server1-fr.freevpn.me 80
 connect-retry-max 3
 connect-retry 3
