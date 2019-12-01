@@ -3,15 +3,15 @@
   {"id":0,"file":"
    
 
+
 dev tun
 
 proto udp
 
-remote vpn876120947.opengw.net 1966
+remote vpn935907387.opengw.net 1494
 
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
-
 
 cipher AES-128-CBC
 auth SHA1
@@ -134,6 +134,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
 
 
    
