@@ -278,20 +278,21 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 
 
    "},
-   {"id":3,"file":"
+   {"id":2,"file":"
    
 
+
 dev tun
+
 proto udp
 
-remote 18.231.120.151 1194
+remote 23.106.122.96 1194
 
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 
 cipher AES-128-CBC
 auth SHA1
-
 resolv-retry infinite
 nobind
 persist-key
@@ -409,7 +410,6 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
-
 
 
    
