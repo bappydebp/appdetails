@@ -134,12 +134,13 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    
 
 
+
 dev tun
-proto tcp
-remote 221.155.170.34 995
+
+proto udp
+remote 124.123.100.23 8606
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
-
 cipher AES-128-CBC
 auth SHA1
 resolv-retry infinite
@@ -259,6 +260,8 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
+
 
 
 
