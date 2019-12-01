@@ -142,74 +142,132 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    {"id":1,"file":"
    
 
-
-client
-remote gw1.sin1.octanevpn.com 4443
-proto udp
-comp-lzo
-mssfix
+dev tun
+proto tcp
+remote vpn633770622.opengw.net 1842
+;http-proxy-retry
+;http-proxy [proxy server] [proxy port]
+cipher AES-128-CBC
+auth SHA1
+resolv-retry infinite
+nobind
 persist-key
 persist-tun
-dev tun
-auth SHA256
-tls-client
+client
+verb 3
+#auth-user-pass
+
+
+###############################################################################
+# The certificate file of the destination VPN Server.
+# 
+# The CA certificate file is embedded in the inline format.
+# You can replace this CA contents if necessary.
+# Please note that if the server certificate is not a self-signed, you have to
+# specify the signer's root certificate (CA) here.
+
 <ca>
 -----BEGIN CERTIFICATE-----
-MIIFQjCCAyqgAwIBAgIIUfxepT+rr8owDQYJKoZIhvcNAQEMBQAwPzELMAkGA1UE
-BhMCS1kxEzARBgNVBAoTCkZhc3Rlc3RWUE4xGzAZBgNVBAMTEkZhc3Rlc3RWUE4g
-Um9vdCBDQTAeFw0xNzA5MTYwMDAxNDZaFw0yNzA5MTQwMDAxNDZaMD8xCzAJBgNV
-BAYTAktZMRMwEQYDVQQKEwpGYXN0ZXN0VlBOMRswGQYDVQQDExJGYXN0ZXN0VlBO
-IFJvb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQC1Xj+WfPTo
-zFynFqc+c3CVrggIllaXEl5bY5VgFynXkqCTM6lSrfC4pNjGXUbqWe6RnGJbM4/6
-kUn+lQDjFSQV1rzP2eDS8+r5+X2WXh4AoeNRUWhvSG+HiHD/B2EFK+Nd5BRSdUjp
-KWAtsCmT2bBt7nT0jN1OdeNrLJeyF8siAqv/oQzKznF9aIe/N01b2M8ZOFTzoXi2
-fZAckgGWui8NB/lzkVIJqSkAPRL8qiJLuRCPVOX1PFD8vV//R8/QumtfbcYBMo6v
-Ck2HmWdrh5OQHPxb3KJtbtG+Z1j8x6HGEAe17djYepBiRMyCEQvYgfD6tvFylc4I
-quhqE9yaP60PJod5TxpWnRQ6HIGSeBm+S+rYSMalTZ8+pUqOOA+IQCYpfpx6EKIJ
-L/VsW2C7cXdvudxDhXPI5lR/QidCb9Ohq3WkfxXaYwzrngdg2avmNqId9R4KESuM
-9GoHW0dszfyBCh5wYfeaffMElfDam3B92NUwyhZwtIiv623WVXY9PPz+EDjSJsIA
-u2Vi1vdJyA4nD4k9Lwmx/1zTc/UaYVLsiBqL2WdfvFTeoWoV+dNxQXSEPhB8gwi8
-x4O4lZW0cwVy/6fa8KMY8gZbcbSTr7U5bRERfW8l+jY+mYKQ/M/ccgpxaHiw1/+4
-LWfbJQ7VhJJrTyN0C36FQzY1URkSXg+53wIDAQABo0IwQDAPBgNVHRMBAf8EBTAD
-AQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQUmVEL4x6xdCqiqu2OBLs27EA8
-xGYwDQYJKoZIhvcNAQEMBQADggIBABCpITvO1+R4T9v2+onHiFxU5JjtCZ0zkXqR
-CMp/Z0UIYbeo1p07pZCPAUjBfGPCkAaR++OiG9sysALdJf8Y6HQKcyuAcWUqQnaI
-hoZ2JcAP7EKq7uCqsMhcYZD/j3O/3RPtSW5UOx6ItDU+Ua0t9Edho9whNw0VQXmo
-1JjYoP3FzPjuKoDWTSO1q5eYlZfwcTcs55O2shNkFafPg/6cCm5j6v9nyHrM3sk4
-LjkrBPUXVx2m/aoz219t8O9Ha9/CdMKXsPO/8gTUzpgnzSgPnGnBmi5xr1nspVN8
-X4E2f3D+DKqBim3YgslD68NcuFQvJ0/BxZzWVbrr+QXoyzaiCgXuogpIDc2bB6oR
-XqFnHNz36d4QJmJdWdSaijiS/peQ6EOPgOZ1GuObLWlDCBZLNeQ+N6QaiJxVO4XU
-j/s22i1IRtwdz84TRHrbWiIpEymsqmb/Ep5r4xV5d6+791axclfOTH7tQrY/SbPt
-TJI4OEgNekI8YfadQifpelF82MsFFEZuaQn0lj+fvLGtE/zKh3OdLTxRc5TAgBB+
-0T81+JQosygNr2aFFG0hxar1eyw/gLeG8H+7Ie50pyPvXO4OgB6Key8rSExpilQX
-lvAT1qX0qS3/K1i/9QkSE9ftIPT6vtwLV2sVQzfyanI4IZgWC6ryhvNLsRn0NFnQ
-clor0+aq
+MIIF2DCCA8CgAwIBAgIQTKr5yttjb+Af907YWwOGnTANBgkqhkiG9w0BAQwFADCB
+hTELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4G
+A1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxKzApBgNV
+BAMTIkNPTU9ETyBSU0EgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTAwMTE5
+MDAwMDAwWhcNMzgwMTE4MjM1OTU5WjCBhTELMAkGA1UEBhMCR0IxGzAZBgNVBAgT
+EkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMR
+Q09NT0RPIENBIExpbWl0ZWQxKzApBgNVBAMTIkNPTU9ETyBSU0EgQ2VydGlmaWNh
+dGlvbiBBdXRob3JpdHkwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCR
+6FSS0gpWsawNJN3Fz0RndJkrN6N9I3AAcbxT38T6KhKPS38QVr2fcHK3YX/JSw8X
+pz3jsARh7v8Rl8f0hj4K+j5c+ZPmNHrZFGvnnLOFoIJ6dq9xkNfs/Q36nGz637CC
+9BR++b7Epi9Pf5l/tfxnQ3K9DADWietrLNPtj5gcFKt+5eNu/Nio5JIk2kNrYrhV
+/erBvGy2i/MOjZrkm2xpmfh4SDBF1a3hDTxFYPwyllEnvGfDyi62a+pGx8cgoLEf
+Zd5ICLqkTqnyg0Y3hOvozIFIQ2dOciqbXL1MGyiKXCJ7tKuY2e7gUYPDCUZObT6Z
++pUX2nwzV0E8jVHtC7ZcryxjGt9XyD+86V3Em69FmeKjWiS0uqlWPc9vqv9JWL7w
+qP/0uK3pN/u6uPQLOvnoQ0IeidiEyxPx2bvhiWC4jChWrBQdnArncevPDt09qZah
+SL0896+1DSJMwBGB7FY79tOi4lu3sgQiUpWAk2nojkxl8ZEDLXB0AuqLZxUpaVIC
+u9ffUGpVRr+goyhhf3DQw6KqLCGqR84onAZFdr+CGCe01a60y1Dma/RMhnEw6abf
+Fobg2P9A3fvQQoh/ozM6LlweQRGBY84YcWsr7KaKtzFcOmpH4MN5WdYgGq/yapiq
+crxXStJLnbsQ/LBMQeXtHT1eKJ2czL+zUdqnR+WEUwIDAQABo0IwQDAdBgNVHQ4E
+FgQUu69+Aj36pvE8hI6t7jiY7NkyMtQwDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB
+/wQFMAMBAf8wDQYJKoZIhvcNAQEMBQADggIBAArx1UaEt65Ru2yyTUEUAJNMnMvl
+wFTPoCWOAvn9sKIN9SCYPBMtrFaisNZ+EZLpLrqeLppysb0ZRGxhNaKatBYSaVqM
+4dc+pBroLwP0rmEdEBsqpIt6xf4FpuHA1sj+nq6PK7o9mfjYcwlYRm6mnPTXJ9OV
+2jeDchzTc+CiR5kDOF3VSXkAKRzH7JsgHAckaVd4sjn8OoSgtZx8jb8uk2Intzna
+FxiuvTwJaP+EmzzV1gsD41eeFPfR60/IvYcjt7ZJQ3mFXLrrkguhxuhoqEwWsRqZ
+CuhTLJK7oQkYdQxlqHvLI7cawiiFwxv/0Cti76R7CZGYZ4wUAc1oBmpjIXUDgIiK
+boHGhfKppC3n9KUkEEeDys30jXlYsQab5xoq2Z0B15R97QNKyvDb6KkBPvVWmcke
+jkk9u+UJueBPSZI9FoJAzMxZxuY67RIuaTxslbH9qh17f4a+Hg4yRvv7E491f0yL
+S0Zj/gA0QHDBw7mh3aZw4gSzQbzpgJHqZJx64SIDqZxubw5lT2yHh17zbqD5daWb
+QOhTsiedSrnAdyGN/4fy3ryM7xfft0kL0fJuMAsaDk527RH89elWsn2/x20Kk4yl
+0MC2Hb46TpSi125sC8KKfPog88Tk5c0NqMuRkrF8hey1FGlmDoLnzc7ILaZRfyHB
+NVOFBkpdn627G190
 -----END CERTIFICATE-----
+
 </ca>
-key-direction 1
-<tls-auth>
------BEGIN OpenVPN Static key V1-----
-697fe793b32cb5091d30f2326d5d124a
-9412e93d0a44ef7361395d76528fcbfc
-82c3859dccea70a93cfa8fae409709bf
-f75f844cf5ff0c237f426d0c20969233
-db0e706edb6bdf195ec3dc11b3f76bc8
-07a77e74662d9a800c8cd1144ebb67b7
-f0d3f1281d1baf522bfe03b7c3f963b1
-364fc0769400e413b61ca7b43ab19fac
-9e0f77e41efd4bda7fd77b1de2d7d785
-5cbbe3e620cecceac72c21a825b243e6
-51f44d90e290e09c3ad650de8fca99c8
-58bc7caad584bc69b11e5c9fd9381c69
-c505ec487a65912c672d83ed0113b5a7
-4ddfbd3ab33b3683cec593557520a72c
-4d6cce46111f56f3396cc3ce7183edce
-553c68ea0796cf6c4375fad00aaa2a42
------END OpenVPN Static key V1-----
-</tls-auth>
-tls-cipher  TLS-DHE-RSA-WITH-AES-256-GCM-SHA384:TLS-DHE-RSA-WITH-AES-256-CBC-SHA256:TLS-DHE-RSA-WITH-CAMELLIA-256-CBC-SHA:TLS-DHE-RSA-WITH-AES-256-CBC-SHA:TLS-RSA-WITH-CAMELLIA-256-CBC-SHA:TLS-RSA-WITH-AES-256-CBC-SHA
-cipher AES-256-CBC
-ping-timer-rem
+
+
+###############################################################################
+# The client certificate file (dummy).
+# 
+# In some implementations of OpenVPN Client software
+# (for example: OpenVPN Client for iOS),
+# a pair of client certificate and private key must be included on the
+# configuration file due to the limitation of the client.
+# So this sample configuration file has a dummy pair of client certificate
+# and private key as follows.
+
+<cert>
+-----BEGIN CERTIFICATE-----
+MIICxjCCAa4CAQAwDQYJKoZIhvcNAQEFBQAwKTEaMBgGA1UEAxMRVlBOR2F0ZUNs
+aWVudENlcnQxCzAJBgNVBAYTAkpQMB4XDTEzMDIxMTAzNDk0OVoXDTM3MDExOTAz
+MTQwN1owKTEaMBgGA1UEAxMRVlBOR2F0ZUNsaWVudENlcnQxCzAJBgNVBAYTAkpQ
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5h2lgQQYUjwoKYJbzVZA
+5VcIGd5otPc/qZRMt0KItCFA0s9RwReNVa9fDRFLRBhcITOlv3FBcW3E8h1Us7RD
+4W8GmJe8zapJnLsD39OSMRCzZJnczW4OCH1PZRZWKqDtjlNca9AF8a65jTmlDxCQ
+CjntLIWk5OLLVkFt9/tScc1GDtci55ofhaNAYMPiH7V8+1g66pGHXAoWK6AQVH67
+XCKJnGB5nlQ+HsMYPV/O49Ld91ZN/2tHkcaLLyNtywxVPRSsRh480jju0fcCsv6h
+p/0yXnTB//mWutBGpdUlIbwiITbAmrsbYnjigRvnPqX1RNJUbi9Fp6C2c/HIFJGD
+ywIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQChO5hgcw/4oWfoEFLu9kBa1B//kxH8
+hQkChVNn8BRC7Y0URQitPl3DKEed9URBDdg2KOAz77bb6ENPiliD+a38UJHIRMqe
+UBHhllOHIzvDhHFbaovALBQceeBzdkQxsKQESKmQmR832950UCovoyRB61UyAV7h
++mZhYPGRKXKSJI6s0Egg/Cri+Cwk4bjJfrb5hVse11yh4D9MHhwSfCOH+0z4hPUT
+Fku7dGavURO5SVxMn/sL6En5D+oSeXkadHpDs+Airym2YHh15h0+jPSOoR6yiVp/
+6zZeZkrN43kuS73KpKDFjfFPh8t4r1gOIjttkNcQqBccusnplQ7HJpsk
+-----END CERTIFICATE-----
+
+</cert>
+
+<key>
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA5h2lgQQYUjwoKYJbzVZA5VcIGd5otPc/qZRMt0KItCFA0s9R
+wReNVa9fDRFLRBhcITOlv3FBcW3E8h1Us7RD4W8GmJe8zapJnLsD39OSMRCzZJnc
+zW4OCH1PZRZWKqDtjlNca9AF8a65jTmlDxCQCjntLIWk5OLLVkFt9/tScc1GDtci
+55ofhaNAYMPiH7V8+1g66pGHXAoWK6AQVH67XCKJnGB5nlQ+HsMYPV/O49Ld91ZN
+/2tHkcaLLyNtywxVPRSsRh480jju0fcCsv6hp/0yXnTB//mWutBGpdUlIbwiITbA
+mrsbYnjigRvnPqX1RNJUbi9Fp6C2c/HIFJGDywIDAQABAoIBAERV7X5AvxA8uRiK
+k8SIpsD0dX1pJOMIwakUVyvc4EfN0DhKRNb4rYoSiEGTLyzLpyBc/A28Dlkm5eOY
+fjzXfYkGtYi/Ftxkg3O9vcrMQ4+6i+uGHaIL2rL+s4MrfO8v1xv6+Wky33EEGCou
+QiwVGRFQXnRoQ62NBCFbUNLhmXwdj1akZzLU4p5R4zA3QhdxwEIatVLt0+7owLQ3
+lP8sfXhppPOXjTqMD4QkYwzPAa8/zF7acn4kryrUP7Q6PAfd0zEVqNy9ZCZ9ffho
+zXedFj486IFoc5gnTp2N6jsnVj4LCGIhlVHlYGozKKFqJcQVGsHCqq1oz2zjW6LS
+oRYIHgECgYEA8zZrkCwNYSXJuODJ3m/hOLVxcxgJuwXoiErWd0E42vPanjjVMhnt
+KY5l8qGMJ6FhK9LYx2qCrf/E0XtUAZ2wVq3ORTyGnsMWre9tLYs55X+ZN10Tc75z
+4hacbU0hqKN1HiDmsMRY3/2NaZHoy7MKnwJJBaG48l9CCTlVwMHocIECgYEA8jby
+dGjxTH+6XHWNizb5SRbZxAnyEeJeRwTMh0gGzwGPpH/sZYGzyu0SySXWCnZh3Rgq
+5uLlNxtrXrljZlyi2nQdQgsq2YrWUs0+zgU+22uQsZpSAftmhVrtvet6MjVjbByY
+DADciEVUdJYIXk+qnFUJyeroLIkTj7WYKZ6RjksCgYBoCFIwRDeg42oK89RFmnOr
+LymNAq4+2oMhsWlVb4ejWIWeAk9nc+GXUfrXszRhS01mUnU5r5ygUvRcarV/T3U7
+TnMZ+I7Y4DgWRIDd51znhxIBtYV5j/C/t85HjqOkH+8b6RTkbchaX3mau7fpUfds
+Fq0nhIq42fhEO8srfYYwgQKBgQCyhi1N/8taRwpk+3/IDEzQwjbfdzUkWWSDk9Xs
+H/pkuRHWfTMP3flWqEYgW/LW40peW2HDq5imdV8+AgZxe/XMbaji9Lgwf1RY005n
+KxaZQz7yqHupWlLGF68DPHxkZVVSagDnV/sztWX6SFsCqFVnxIXifXGC4cW5Nm9g
+va8q4QKBgQCEhLVeUfdwKvkZ94g/GFz731Z2hrdVhgMZaU/u6t0V95+YezPNCQZB
+wmE9Mmlbq1emDeROivjCfoGhR3kZXW1pTKlLh6ZMUQUOpptdXva8XxfoqQwa3enA
+M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
+-----END RSA PRIVATE KEY-----
+
+</key>
+
+
 
 
    "},
