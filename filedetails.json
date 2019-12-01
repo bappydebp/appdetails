@@ -144,7 +144,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 
 
 client
-remote sg-ovudp-01.jumptoserver.com 4443
+remote gw1.sin1.octanevpn.com 4443
 proto udp
 comp-lzo
 mssfix
