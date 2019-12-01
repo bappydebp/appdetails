@@ -155,7 +155,6 @@ tun-mtu-extra 32
 mssfix 1450
 persist-key
 persist-tun
-auth-user-pass
 comp-lzo
 reneg-sec 0
 verb 3
