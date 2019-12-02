@@ -4,10 +4,10 @@
    
 
 client
-dev tun1
-proto tcp
-remote 198.27.69.198 443
-remote ca198.vpnbook.com 80
+dev tun0
+proto udp
+remote 198.27.69.198 53
+remote ca198.vpnbook.com 53
 resolv-retry infinite
 nobind
 persist-key
@@ -86,6 +86,7 @@ WKUgHBMRcI2s3PecuOmQspxG+D+UR3kpVBYs9F2aEZIEBuCfLuIW9Mcfd2I2NjyY
 gm7SAhk379I6hr5NXdBbvTedlb1ULrhWV8lpwZ9HW2k=
 -----END RSA PRIVATE KEY-----
 </key>
+
 
    
    "},
