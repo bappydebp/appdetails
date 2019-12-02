@@ -4,15 +4,14 @@
    
 
 client
-dev tun3
-proto tcp
-remote 192.99.37.222 80
-remote ca222.vpnbook.com 80
+dev tun0
+proto udp
+remote 192.99.37.222 53
+remote ca222.vpnbook.com 53
 resolv-retry infinite
 nobind
 persist-key
 persist-tun
-
 comp-lzo
 verb 3
 cipher AES-128-CBC
