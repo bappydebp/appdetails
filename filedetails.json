@@ -4,10 +4,10 @@
    
 
 client
-dev tun2
-proto udp
-remote 192.99.37.222 25000
-remote ca222.vpnbook.com 25000
+dev tun3
+proto tcp
+remote 198.27.69.198 80
+remote ca198.vpnbook.com 80
 resolv-retry infinite
 nobind
 persist-key
