@@ -1,10 +1,10 @@
 {
   "ads":"true",
   "update":[{
-    "version":"1.0.3",
+    "version":"1.0.4",
     "title":"Ultra Fast VPN ",
     "description":"The App is available at google play store.",
-    "size":"7.5 MB"
+    "size":"4.5 MB"
   }],
   "blocked":[
     {"id":0, "app":"com.android.game"},
