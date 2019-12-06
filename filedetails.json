@@ -2,11 +2,10 @@
 "ovpn_file":[
   {"id":0,"file":"
    
+
 dev tun
-proto udp
-remote 187.189.34.126 18452
-;http-proxy-retry
-;http-proxy [proxy server] [proxy port]
+proto tcp
+remote 66.69.130.234 1672
 cipher AES-128-CBC
 auth SHA1
 resolv-retry infinite
@@ -15,7 +14,6 @@ persist-key
 persist-tun
 client
 verb 3
-auth-user-pass
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIF2DCCA8CgAwIBAgIQTKr5yttjb+Af907YWwOGnTANBgkqhkiG9w0BAQwFADCB
@@ -51,7 +49,6 @@ QOhTsiedSrnAdyGN/4fy3ryM7xfft0kL0fJuMAsaDk527RH89elWsn2/x20Kk4yl
 0MC2Hb46TpSi125sC8KKfPog88Tk5c0NqMuRkrF8hey1FGlmDoLnzc7ILaZRfyHB
 NVOFBkpdn627G190
 -----END CERTIFICATE-----
-
 </ca>
 <cert>
 -----BEGIN CERTIFICATE-----
@@ -72,7 +69,6 @@ Fku7dGavURO5SVxMn/sL6En5D+oSeXkadHpDs+Airym2YHh15h0+jPSOoR6yiVp/
 6zZeZkrN43kuS73KpKDFjfFPh8t4r1gOIjttkNcQqBccusnplQ7HJpsk
 -----END CERTIFICATE-----
 </cert>
-
 <key>
 -----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEA5h2lgQQYUjwoKYJbzVZA5VcIGd5otPc/qZRMt0KItCFA0s9R
@@ -101,9 +97,7 @@ va8q4QKBgQCEhLVeUfdwKvkZ94g/GFz731Z2hrdVhgMZaU/u6t0V95+YezPNCQZB
 wmE9Mmlbq1emDeROivjCfoGhR3kZXW1pTKlLh6ZMUQUOpptdXva8XxfoqQwa3enA
 M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
-
 </key>
-
 
    
    "},
