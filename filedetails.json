@@ -5,7 +5,7 @@
 
 dev tun
 proto tcp
-remote 24.84.144.13 1395
+remote 174.6.105.254 1727
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -17,15 +17,6 @@ persist-tun
 client
 verb 3
 #auth-user-pass
-
-
-###############################################################################
-# The certificate file of the destination VPN Server.
-# 
-# The CA certificate file is embedded in the inline format.
-# You can replace this CA contents if necessary.
-# Please note that if the server certificate is not a self-signed, you have to
-# specify the signer's root certificate (CA) here.
 
 <ca>
 -----BEGIN CERTIFICATE-----
@@ -65,16 +56,6 @@ NVOFBkpdn627G190
 
 </ca>
 
-
-###############################################################################
-# The client certificate file (dummy).
-# 
-# In some implementations of OpenVPN Client software
-# (for example: OpenVPN Client for iOS),
-# a pair of client certificate and private key must be included on the
-# configuration file due to the limitation of the client.
-# So this sample configuration file has a dummy pair of client certificate
-# and private key as follows.
 
 <cert>
 -----BEGIN CERTIFICATE-----
@@ -127,7 +108,6 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
-
 
 
    
@@ -139,13 +119,11 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 
 dev tun
 proto tcp
-
-remote 60.125.92.83 1918
+remote 124.219.192.28 1797
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
 auth SHA1
-
 resolv-retry infinite
 nobind
 persist-key
@@ -153,9 +131,6 @@ persist-tun
 client
 verb 3
 #auth-user-pass
-
-
-
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIF2DCCA8CgAwIBAgIQTKr5yttjb+Af907YWwOGnTANBgkqhkiG9w0BAQwFADCB
@@ -194,16 +169,6 @@ NVOFBkpdn627G190
 
 </ca>
 
-
-###############################################################################
-# The client certificate file (dummy).
-# 
-# In some implementations of OpenVPN Client software
-# (for example: OpenVPN Client for iOS),
-# a pair of client certificate and private key must be included on the
-# configuration file due to the limitation of the client.
-# So this sample configuration file has a dummy pair of client certificate
-# and private key as follows.
 
 <cert>
 -----BEGIN CERTIFICATE-----
@@ -256,6 +221,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
 
 
 
@@ -264,7 +230,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    
 dev tun
 proto tcp
-remote 73.147.110.226 1602
+remote 76.88.158.29 443
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -314,17 +280,6 @@ NVOFBkpdn627G190
 -----END CERTIFICATE-----
 
 </ca>
-
-
-###############################################################################
-# The client certificate file (dummy).
-# 
-# In some implementations of OpenVPN Client software
-# (for example: OpenVPN Client for iOS),
-# a pair of client certificate and private key must be included on the
-# configuration file due to the limitation of the client.
-# So this sample configuration file has a dummy pair of client certificate
-# and private key as follows.
 
 <cert>
 -----BEGIN CERTIFICATE-----
@@ -377,6 +332,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
 
 
    
