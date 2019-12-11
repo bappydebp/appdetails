@@ -264,17 +264,15 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    {"id":2,"file":"
    
 
-dev tun
-proto tcp
 
-remote vpn984160303.opengw.net 443
 
+
+proto udp
+remote vpn745386964.opengw.net 1693
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
-
 cipher AES-128-CBC
 auth SHA1
-
 resolv-retry infinite
 nobind
 persist-key
@@ -383,8 +381,6 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
-
-
 
 
 
