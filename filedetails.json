@@ -250,8 +250,6 @@ replay-window 256
 
 #auth-user-pass
 
-ncp-ciphers AES-256-GCM:AES-256-CBC:AES-128-GCM
-
 key-direction 1
 <ca>
 -----BEGIN CERTIFICATE-----
@@ -305,10 +303,7 @@ bedd044e48a0f1f96527bfdcc940aa09
 </tls-auth>
 
 
-block-outside-dns
-sndbuf 524288
-rcvbuf 524288
-
+ncp-ciphers AES-256-GCM:AES-256-CBC:AES-128-GCM
 
    "}
 ]
