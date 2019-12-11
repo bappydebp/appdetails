@@ -230,9 +230,10 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    "},
    {"id":2,"file":"
    
+
 client
 dev tun
-remote us-ny-ny-001.privatetunnel.com 443 tcp
+remote us-ca-lax-001.privatetunnel.com 1194 udp
 remote-cert-tls server
 comp-lzo no
 auth SHA1
@@ -350,29 +351,6 @@ MxEu05sO4WPPIG38EcwoUdRp60QddMKEUll1DN5PbO71YAeRSkwl0CWKYjTZ0CYo
 Z3nXURhUP4T7Vnaws2kgAuycOwsAxJ/HMrsvMGhYF7cXLGmWvaXBLA==
 -----END RSA PRIVATE KEY-----
 </key>
-
-key-direction 1
-<tls-auth>
------BEGIN OpenVPN Static key V1-----
-4f65292e639c83574026ab790f67257b
-e92f02e96e3c95db3634393b0c3c094b
-71dbef6ab0e715aff9e5d574a69f015e
-acb57293a0cb91c57cb4f9064a000d3b
-640285c8af740c1910193be5e3ab81af
-009e16f916478a1c3a629057cc622afd
-8a705bd893c316a944f1fda6a2e5c1b3
-4af9fc0233f15fac4a2b125ab9aaaa4d
-8604bebe99e5c2470edda8c39eeb2609
-d8c1db928e1035880fc4a2c695057e21
-335867cfdea9f041c7b2090702667ed4
-8ddb8310edb9320a41a570624812dfaf
-d7ca0131085f044490dae138c61bbf63
-15bb98cea0628b99a10de850ed7ee43e
-0dd7e5f446439846a4f2319ec5f735f8
-521021b9e6d45cdee7bfd22fce270a49
------END OpenVPN Static key V1-----
-</tls-auth>
-
 
 
    "}
