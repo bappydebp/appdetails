@@ -344,18 +344,25 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    "},
    {"id":3,"file":"
    
+client
 dev tun
+remote sin-s03.vpn.asia
+port 1194
 proto udp
-remote sg1.vpnjantit.com 1194
-cipher AES-128-CBC
-auth SHA1
-resolv-retry infinite
-nobind
 persist-key
 persist-tun
-client
-verb 3
+comp-lzo
 #auth-user-pass
+nobind
+ca ca.crt
+auth SHA256
+cipher AES-256-CBC
+keysize 256
+float
+tun-mtu 48000
+fragment 0
+mssfix 0
+remote sin-s03.vpn.asia 1194
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIDsjCCApqgAwIBAgIBADANBgkqhkiG9w0BAQsFADBYMRcwFQYDVQQDDA5zZy5q
