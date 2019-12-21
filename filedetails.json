@@ -119,9 +119,10 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 
 dev tun
 proto udp
-remote vpn639212327.opengw.net 1352
+remote vpn589849755.opengw.net 1868
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
+
 cipher AES-128-CBC
 auth SHA1
 resolv-retry infinite
@@ -131,7 +132,6 @@ persist-tun
 client
 verb 3
 #auth-user-pass
-
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIF2DCCA8CgAwIBAgIQTKr5yttjb+Af907YWwOGnTANBgkqhkiG9w0BAQwFADCB
@@ -169,6 +169,7 @@ NVOFBkpdn627G190
 -----END CERTIFICATE-----
 
 </ca>
+
 
 <cert>
 -----BEGIN CERTIFICATE-----
@@ -221,6 +222,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
 
 
 
@@ -234,8 +236,9 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 
 
 dev tun
+
 proto udp
-remote vpn743128837.opengw.net 1927
+remote vpn984160303.opengw.net 1194
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -285,6 +288,7 @@ NVOFBkpdn627G190
 -----END CERTIFICATE-----
 
 </ca>
+
 
 <cert>
 -----BEGIN CERTIFICATE-----
@@ -337,6 +341,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
 
 
 
