@@ -3,7 +3,7 @@
   {"id":0,"file":"
 dev tun
 proto udp
-remote vpn357534506.opengw.net 1224
+remote vpn990286355.opengw.net 1195
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -102,7 +102,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    {"id":1,"file":"
 dev tun
 proto udp
-remote 161.202.144.236 1194
+remote vpn854090107.opengw.net 1669
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
