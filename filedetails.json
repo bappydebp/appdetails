@@ -102,7 +102,7 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    {"id":1,"file":"
 dev tun
 proto udp
-remote 40.117.57.219 1194
+remote 161.202.144.236 1194
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
