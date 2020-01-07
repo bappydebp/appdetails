@@ -18,7 +18,8 @@
   "free":[
     {"id":0, "file":0, "city":"Toronto","country":"Canada","image":"canada","ip":"205.185.114.16","active":"true","signal":"a"},
     {"id":1, "file":1, "city":"New York NY","country":"United States","image":"unitedstates","ip":"167.99.9.115","active":"true","signal":"a"},
-    {"id":2, "file":2, "city":"Tokyo","country":"Japan","image":"japan","ip":"vpn591865543.opengw.net","active":"true","signal":"a"}
+    {"id":2, "file":2, "city":"Tokyo","country":"Japan","image":"japan","ip":"vpn591865543.opengw.net","active":"true","signal":"a"},
+    {"id":3, "file":3, "city":"Dhaka","country":"Bangladesh","image":"japan","ip":"vpn591865543.opengw.net","active":"true","signal":"a"}
    
   ]
 }
