@@ -211,7 +211,6 @@ persist-tun
 client
 verb 3
 #auth-user-pass
-
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIF2DCCA8CgAwIBAgIQTKr5yttjb+Af907YWwOGnTANBgkqhkiG9w0BAQwFADCB
@@ -249,8 +248,6 @@ NVOFBkpdn627G190
 -----END CERTIFICATE-----
 
 </ca>
-
-
 <cert>
 -----BEGIN CERTIFICATE-----
 MIICxjCCAa4CAQAwDQYJKoZIhvcNAQEFBQAwKTEaMBgGA1UEAxMRVlBOR2F0ZUNs
@@ -300,7 +297,6 @@ va8q4QKBgQCEhLVeUfdwKvkZ94g/GFz731Z2hrdVhgMZaU/u6t0V95+YezPNCQZB
 wmE9Mmlbq1emDeROivjCfoGhR3kZXW1pTKlLh6ZMUQUOpptdXva8XxfoqQwa3enA
 M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
-
 </key>
 
 "}
