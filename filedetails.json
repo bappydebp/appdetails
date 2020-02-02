@@ -206,9 +206,9 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    "},
    {"id":2,"file":"
    
-   dev tun
-proto udp
-remote public-vpn-88.opengw.net 1195
+dev tun
+proto tcp
+remote vpn543703650.opengw.net 1239
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -309,6 +309,8 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
+
 
    
    "},
