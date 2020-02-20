@@ -421,8 +421,8 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    
    {"id":4,"file":"
 dev tun
-proto udp
-remote vpn420658980.opengw.net 1194
+proto tcp
+remote vpn103430837.opengw.net 443
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -522,6 +522,8 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
+
 "},
     {"id":5,"file":"
 setenv UV_ID 1510382080a244f3826bb5c3f96801c9
