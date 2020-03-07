@@ -200,8 +200,8 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    {"id":2,"file":"
    
    dev tun
-proto tcp
-remote vpn984160303.opengw.net 443
+proto udp
+remote vpn542934480.opengw.net 1489
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -250,6 +250,7 @@ NVOFBkpdn627G190
 -----END CERTIFICATE-----
 
 </ca>
+
 <cert>
 -----BEGIN CERTIFICATE-----
 MIICxjCCAa4CAQAwDQYJKoZIhvcNAQEFBQAwKTEaMBgGA1UEAxMRVlBOR2F0ZUNs
@@ -301,6 +302,8 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 -----END RSA PRIVATE KEY-----
 
 </key>
+
+
 
    "},
    {"id":3,"file":"
