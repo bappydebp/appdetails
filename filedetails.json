@@ -213,9 +213,9 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    "},
    {"id":2,"file":"
    
-   dev tun
-proto udp
-remote vpn542934480.opengw.net 1489
+dev tun
+proto tcp
+remote public-vpn-118.opengw.net 443
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -322,9 +322,9 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    "},
    {"id":3,"file":"
    
-   dev tun
+dev tun
 proto tcp
-remote vpn543703650.opengw.net 1239
+remote public-vpn-250.opengw.net 443
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
@@ -336,6 +336,7 @@ persist-tun
 client
 verb 3
 #auth-user-pass
+
 <ca>
 -----BEGIN CERTIFICATE-----
 MIIF2DCCA8CgAwIBAgIQTKr5yttjb+Af907YWwOGnTANBgkqhkiG9w0BAQwFADCB
@@ -373,7 +374,6 @@ NVOFBkpdn627G190
 -----END CERTIFICATE-----
 
 </ca>
-
 <cert>
 -----BEGIN CERTIFICATE-----
 MIICxjCCAa4CAQAwDQYJKoZIhvcNAQEFBQAwKTEaMBgGA1UEAxMRVlBOR2F0ZUNs
@@ -427,7 +427,6 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
 </key>
 
 
-   
    "},
    
    {"id":4,"file":"
