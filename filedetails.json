@@ -431,8 +431,8 @@ M7muBbF0XN7VO80iJPv+PmIZdEIAkpwKfi201YB+BafCIuGxIF50Vg==
    
    {"id":4,"file":"
 dev tun
-proto tcp
-remote vpn103430837.opengw.net 443
+proto udp
+remote vpn871066845.opengw.net 1195
 ;http-proxy-retry
 ;http-proxy [proxy server] [proxy port]
 cipher AES-128-CBC
